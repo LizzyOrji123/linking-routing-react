@@ -3,6 +3,9 @@ import AboutMe from './AboutMe.js';
 import Contact from './Contact.js';
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
+import ReactPlayer from "react-player/youtube";
+
+const randomImageURL = "https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg";
 
 function App() {
   return (
@@ -17,7 +20,21 @@ function App() {
         <Route path='About me' element={<AboutMe/>}/>
         <Route path='Contact' element={<Contact/>}/>
       </Routes>
+      <img
+        height ={200}
+        src ={require("./assets/MyLemon.jpg")}
+        alt = "Lemon Restaurant"
+      />
+
+      <img
+      height ={200}
+      src ={randomImageURL}
+      alt = "flower"
+      />
+
+      <MyVideo = {ReactPlayer}/>
     </div>
+
   );
 };
 

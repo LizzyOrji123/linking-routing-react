@@ -5,6 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 
+import {v4 as uuidv4} from 'uuid';
+
+console.log(uuidv4()); // 👉️ dcc5b637-9760-4a7a-bba0-f50afdf9b0bb
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
